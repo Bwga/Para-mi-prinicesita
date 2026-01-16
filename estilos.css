@@ -124,4 +124,15 @@ body {
       opacity: 1;
     }
   }
-  
+
+  .minicard {
+    display: inline-block;
+    margin-top: 30px;
+    color: #666;
+    transition: transform 0.2 ease;
+  }
+
+  .minicard:hover {
+    transform: scale(1.1);
+  }
+
