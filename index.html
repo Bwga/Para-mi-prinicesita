@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para que mi princesita no se pierda de ningun regalito</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Para que no te pierdas ningun regalito</h1>
+
+  <div class="lista">
+    <a class="card" href="Textos/Texto1.html">
+      <h2>Superaremos todo juntos</h2>
+      <p class="fecha">14 de enero de 2025</p>
+    </a>
+
+    <a class="card" href="Textos/Texto2.html">
+        <h2>¿De que trata todo esto?</h2>
+        <p class="fecha">16 de enero del 2025</p>
+    </a>
+  </div>
+  <script>
+    function crearCorazon() {
+      const corazon = document.createElement("div");
+      corazon.classList.add("corazon");
+      corazon.innerText = "❤";
+  
+      corazon.style.left = Math.random() * 100 + "vw";
+      corazon.style.animationDuration = (4 + Math.random() * 3) + "s";
+  
+      document.body.appendChild(corazon);
+  
+      setTimeout(() => {
+        corazon.remove();
+      }, 7000);
+    }
+  
+    setInterval(crearCorazon, 2500);
+  </script>
+
+  <script>
+    function crearGato() {
+      const gato = document.createElement("div");
+      gato.classList.add("gato");
+      gato.innerText = "😼";
+  
+      gato.style.left = Math.random() * 100 + "vw";
+      gato.style.animationDuration = (4 + Math.random() * 3) + "s";
+  
+      document.body.appendChild(gato);
+  
+      setTimeout(() => {
+        gato.remove();
+      }, 7000);
+    }
+  
+    setInterval(crearGato, 5000);
+  </script>
+
+<script>
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const destino = link.href;
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = destino;
+        }, 400);
+      });
+    });
+  </script>
+  
+</body>
+</html>
