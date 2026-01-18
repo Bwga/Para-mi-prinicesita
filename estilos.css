@@ -136,3 +136,55 @@ body {
     transform: scale(1.1);
   }
 
+  .contador {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #c9184a;
+    font-weight: bold;
+  }
+  
+  .bloqueado {
+    opacity: 0.5;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+    transition: transform 0.2s ease;
+  }
+
+  .bloqueado:hover {
+    transform: scale(1.05);
+  }
+
+  .bloqueado-texto {
+    font-size: 0.9em;
+    color: #6c757d;
+  }
+
+  .card {
+    min-height: 160px;   /* ajusta según tu diseño */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+
+
+  .card {
+    transform-origin: center;
+  }
+  
+  
+  
+  
+  .bloqueado-texto {
+    margin-top: auto;
+    font-style: italic;
+  }
+  
