@@ -188,3 +188,21 @@ body {
     font-style: italic;
   }
   
+
+  .btn-sorpresa {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff6aa2, #ffb3c7);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-sorpresa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+  }
+  
